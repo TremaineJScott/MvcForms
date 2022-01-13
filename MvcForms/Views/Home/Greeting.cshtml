@@ -1,0 +1,13 @@
+﻿@model MvcForms.Models.FormViewModel
+@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+<p>Hello <span>@Model.FirstName</span> <span>@Model.LastName</span>. </p>
+@if (Model.IsSameName)
+{
+    <p>Wow! I should just call you @Model.FirstName Squared</p>
+}
+<p>It's great to meet you!</p>

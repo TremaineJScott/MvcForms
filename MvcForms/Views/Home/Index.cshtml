@@ -1,0 +1,23 @@
+﻿@model MvcForms.Models.FormViewModel
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+</div>
+
+<form asp-action="Greeting" asp-controller="Home">
+    <label asp-for="FirstName"></label>
+    <input asp-for="FirstName" placeholder="Enter First Name" />
+    <label asp-for="LastName"></label>
+    <input asp-for="LastName" placeholder="Enter Last Name" />
+    <input type="submit" />
+</form>
+<br/>
+<form asp-controller="Home" asp-action="ProcessFavorites">
+    <label asp-for="Animal"></label>
+    <input asp-for="Animal" />
+    <input type="submit"/>
+</form>
