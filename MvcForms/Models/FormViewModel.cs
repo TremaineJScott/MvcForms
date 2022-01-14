@@ -19,5 +19,8 @@ namespace MvcForms.Models
         [Display(Name = "What's your favorite animal?")]
         public string Animal { get; set; }
         public string Message { get; set; }
+
+        [Display(Name = "What's your full name?")]
+        public string FullName { get; set; }
     }
 }

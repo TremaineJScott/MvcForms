@@ -21,3 +21,17 @@
     <input asp-for="Animal" />
     <input type="submit"/>
 </form>
+
+<div class="border border-danger">
+    <br/>
+    <form asp-controller="Home" asp-action="Process">
+        <label asp-for="FullName"></label>
+        <input asp-for="FullName" /><br />
+        <input type="submit" name="submit" value="Greet" />
+        <input type="submit" name="submit" value="Reverse" />
+        <input type="submit" name="submit" value="No Vowels" />
+        <input type="submit" name="submit" value="Only Vowels" />
+    </form>
+</div>
+
+

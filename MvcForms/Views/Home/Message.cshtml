@@ -1,0 +1,5 @@
+﻿@model MvcForms.Models.MessageViewModel
+
+<h4>Message: @Model.Message</h4>
+
+<input type="button" value="Return" onclick="location.href='@Url.Action("Index","Home")'"/>
